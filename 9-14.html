@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // let arr=[1,2,3,3,3,4,5,6,7,5,4,3,1,8,9,10];
+    //
+    // //diz
+    //
+    // function asd(arr){
+    //     let newarr1=[];
+		//     for(let i=0;i<arr.length;i++){
+		//     	if(!newarr1.includes(arr[i])){
+		//     		newarr1.push(arr[i])
+		//     	}
+		//     }
+		//     return newarr1
+		// }
+		// console.log(asd(arr))
+    //
+    // //dez
+    //
+    // function ishu(arr){
+    //   let newarr=[];
+    //   for (let i = 0; i < arr.length; i++) {
+    //     newarr.push(arr[i])
+    //       for (let j = i-1; j >= 0; j--) {
+    //         if (arr[i]==arr[j]) {
+    //           newarr.pop();
+    //           break;
+    //         }
+    //       }
+    //   }
+    // return newarr;
+    // console.log(newarr);
+    // }
+    // console.log(ishu(arr));
+    //
+    // //dsz
+    //
+    // function dszff(arr){
+    //   let newarr=[];
+    //   for (let i = 0; i < arr.length; i++) {
+    //     let flag=true;
+    //     for (let j = i+1; j < arr.length; j++) {
+    //       if (arr[j]==arr[i]) {
+    //         flag=false;
+    //         break;
+    //       }
+    //     }
+    //     if(flag){
+    //       newarr.push(arr[i])
+    //     }
+    //   }
+    //   return newarr;
+    // }
+    // console.log(dszff(arr));
+
+    let arr=[1,2,3,4,5,6,7,8,9,0];
+    function abc(arr){
+      let newarr=[];
+      for (let i = 0; i < 4; i++) {
+          newarr.push(arr[Math.floor(Math.random()*arr.length)])
+      }
+      return newarr;
+    }
+    console.log(abc(arr));
+    // console.log(cba(arr));
+    // function cba(arr){
+    //   let newarr=[];
+    //     for (let i = 0; i < 1; i++) {
+    //         newarr.push(arr[Math.floor(Math.random()*arr.length)])
+    //     }
+    //   return newarr;
+    // }
+  </script>
+</body>
+</html>

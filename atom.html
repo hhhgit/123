@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    bottom{
+      width: 100px;
+      height: 100px;
+      background: skyblue;
+      padding: 20px;
+      color: #fff;
+      line-height: 100px;
+    }
+    a{
+      color: black;
+      font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+  <a href="9-15.html">呸，小渣渣，法克鱿</a>
+  <br>
+  <bottom id="ht">后退</bottom>
+  <bottom id="qj">前进</bottom>
+  <bottom id="sx">刷新</bottom>
+  <script>
+  let ht=document.getElementById('ht')
+  let qj=document.getElementById('qj')
+  let sx=document.getElementById('sx')
+  // alert(history.length);
+  ht.onclick=function(){
+    history.forward()
+  }
+  qj.onclick=function(){
+    history.back()
+  }
+  sx.onclick=function(){
+    history.go()
+  }
+  </script>
+</body>
+</html>

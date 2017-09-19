@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+      background: #000;
+    }
+    mian{
+      width: 300px;
+      height: 500px;
+      background: #fff;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      padding: 0 100px;
+    }
+    h3{
+      height: 100px;
+      margin: 0 auto;
+      background: #fff;
+      line-height: 100px;
+      text-align: center;
+      color: skyblue;
+    }
+    span{
+      background: #fff;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <mian>
+    <h3>输入有误</h3>
+    <h3><span id="ds">5</span>s后返回</h3>
+  </mian>
+</body>
+</html>
+<script>
+  let ds=document.getElementById('ds');
+  let js=setInterval(function(){
+    if(ds.innerText<=0){
+      clearInterval(js);
+      location.replace("denglu.html")
+    }else {
+      ds.innerText-=1;
+    }
+  },1000)
+
+</script>
