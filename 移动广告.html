@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div{
+      width: 300px;
+      height: 300px;
+      background: pink;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+<script>
+  let box=document.getElementsByClassName('box')[0];
+  let max=window.innerHeight-box.offsetHeight;
+  let t;
+  t=setInterval(move,60);
+  let speed=10;
+  function move(){
+    let top=box.offsetTop+speed;
+    if(top>=max){
+      top=max;
+      speed*=-1;
+    }
+    if(top<=0){
+      top=0;
+      speed*=-1;
+    }
+    box.style.top=top+'px';
+  }
+</script>
+</html>
